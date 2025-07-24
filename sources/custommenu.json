@@ -1,0 +1,109 @@
+{
+    "pemilik": [
+        {
+            "menu": "Data User",
+            "link": "User",
+            "menusub": [
+                {
+                    "menu_sub": "Karyawan",
+                    "link_sub": "Pegawai"
+                }
+            ]
+        },
+        {
+            "menu": "Data Stok",
+            "link": "Produk",
+            "menusub": [
+                {
+                    "menu_sub": "Stok",
+                    "link_sub": "Stok"
+                }
+            ]
+        },
+        {
+            "menu": "Prediksi",
+            "link": "Prediksi",
+            "menusub": [
+                {
+                    "menu_sub": "Moving Average",
+                    "link_sub": "Moving_average"
+                }
+            ]
+        },
+        {
+            "menu": "Laporan",
+            "link": "Laporan",
+            "menusub": [
+                {
+                    "menu_sub": "Penjualan",
+                    "link_sub": "Penjualan"
+                },
+                {
+                    "menu_sub": "Pemesanan",
+                    "link_sub": "Pemesanan"
+                }
+            ]
+        }
+    ],
+    "kasir": [
+        {
+            "menu": "Data User",
+            "link": "User",
+            "menusub": [
+                {
+                    "menu_sub": "Pelanggan",
+                    "link_sub": "Pelanggan"
+                }
+            ]
+        },
+        {
+            "menu": "Data Produk",
+            "link": "Produk",
+            "menusub": [
+                {
+                    "menu_sub": "Produk",
+                    "link_sub": "Produk"
+                },
+                {
+                    "menu_sub": "Kategori",
+                    "link_sub": "Kategori"
+                }
+            ]
+        },
+        {
+            "menu": "Transaksi",
+            "link": "Transaksi",
+            "menusub": [
+                {
+                    "menu_sub": "Penjualan",
+                    "link_sub": "Penjualan"
+                },
+                {
+                    "menu_sub": "Pemesanan",
+                    "link_sub": "Pemesanan"
+                }
+            ]
+        },
+        {
+            "menu": "Laporan",
+            "link": "Laporan",
+            "menusub": [
+                {
+                    "menu_sub": "Penjualan",
+                    "link_sub": "Penjualan"
+                },
+                {
+                    "menu_sub": "Pemesanan",
+                    "link_sub": "Pemesanan"
+                }
+            ]
+        }
+    ],
+    "action": [
+        "Add",
+        "Edit",
+        "Delete",
+        "Detail",
+        "List"
+    ]
+}
