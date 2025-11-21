@@ -24,7 +24,8 @@ class Stok extends CI_Controller {
     public function simpan() {
         $data  = array(
             "id_produk" =>$this->input->post("id_produk"),
-            "jml_stok" => $this->input->post("jml_stok")	
+            "jml_stok" => $this->input->post("jml_stok"),
+            "satuan" => $this->input->post("satuan")	
         );
         $insert = $this->db->insert("tb_stok", $data);
             if($insert) {
@@ -38,7 +39,8 @@ class Stok extends CI_Controller {
     public function update() {
         $data = array(
             "id_produk" => $this->input->post("id_produk"),
-            "jml_stok" => $this->input->post("jml_stok")
+            "jml_stok" => $this->input->post("jml_stok"),
+            "satuan" => $this->input->post("satuan")
         );
 
         $this->db->where("id_stok", $this->input->post("id_stok"));

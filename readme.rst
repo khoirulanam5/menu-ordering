@@ -1,70 +1,130 @@
-###################
-What is CodeIgniter
-###################
+# Sistem Pemesanan Makanan dengan Moving Average
 
-CodeIgniter is an Application Development Framework - a toolkit - for people
-who build web sites using PHP. Its goal is to enable you to develop projects
-much faster than you could if you were writing code from scratch, by providing
-a rich set of libraries for commonly needed tasks, as well as a simple
-interface and logical structure to access these libraries. CodeIgniter lets
-you creatively focus on your project by minimizing the amount of code needed
-for a given task.
+Sistem pemesanan makanan modern yang dilengkapi dengan fitur **peramalan stok menggunakan Metode Moving Average**, landing page menarik, serta manajemen operasional restoran/kedai secara lengkap. Sistem ini mendukung beberapa role pengguna dan dibangun menggunakan **CodeIgniter 3**, **MySQL**, serta **HTML**, **CSS**, **JavaScript**, dan **Bootstrap**.
 
-*******************
-Release Information
-*******************
+---
 
-This repo contains in-development code for future releases. To download the
-latest stable release please visit the `CodeIgniter Downloads
-<https://codeigniter.com/download>`_ page.
+## 🍽️ Fitur Utama
 
-**************************
-Changelog and New Features
-**************************
+### 🛒 Pemesanan Makanan
 
-You can find a list of all changes for each release in the `user
-guide change log <https://github.com/bcit-ci/CodeIgniter/blob/develop/user_guide_src/source/changelog.rst>`_.
+* Pemesanan langsung oleh pelanggan
+* Keranjang belanja
+* Riwayat pemesanan
+* Estimasi waktu penyajian
 
-*******************
-Server Requirements
-*******************
+### 🔮 Forecasting Stok (Moving Average)
 
-PHP version 5.6 or newer is recommended.
+* Prediksi kebutuhan bahan berdasarkan data penjualan sebelumnya
+* Mengurangi risiko kehabisan atau kelebihan stok
+* Dashboard grafik peramalan
 
-It should work on 5.3.7 as well, but we strongly advise you NOT to run
-such old versions of PHP, because of potential security and performance
-issues, as well as missing features.
+### 💵 Transaksi & Kasir
 
-************
-Installation
-************
+* Input pesanan dari kasir
+* Pembayaran tunai/non-tunai
+* Cetak struk
+* Rekap transaksi harian/bulanan
 
-Please see the `installation section <https://codeigniter.com/user_guide/installation/index.html>`_
-of the CodeIgniter User Guide.
+### 📦 Manajemen Produk & Bahan
 
-*******
-License
-*******
+* Data menu makanan
+* Harga, kategori, foto
+* Monitoring stok bahan
 
-Please see the `license
-agreement <https://github.com/bcit-ci/CodeIgniter/blob/develop/user_guide_src/source/license.rst>`_.
+### 👥 Role Pengguna
 
-*********
-Resources
-*********
+* **Pemilik** – Melihat laporan, analitik, forecasting, dan mengelola produk
+* **Kasir** – Input pesanan dan mengelola transaksi
+* **Pelanggan** – Pemesanan makanan via landing page
 
--  `User Guide <https://codeigniter.com/docs>`_
--  `Language File Translations <https://github.com/bcit-ci/codeigniter3-translations>`_
--  `Community Forums <http://forum.codeigniter.com/>`_
--  `Community Wiki <https://github.com/bcit-ci/CodeIgniter/wiki>`_
--  `Community Slack Channel <https://codeigniterchat.slack.com>`_
+### 🎨 Landing Page Menarik
 
-Report security issues to our `Security Panel <mailto:security@codeigniter.com>`_
-or via our `page on HackerOne <https://hackerone.com/codeigniter>`_, thank you.
+* Tampilan modern & responsif
+* Menu makanan dengan foto
+* Testimoni & kontak
+* CTA untuk pemesanan
 
-***************
-Acknowledgement
-***************
+---
 
-The CodeIgniter team would like to thank EllisLab, all the
-contributors to the CodeIgniter project and you, the CodeIgniter user.
+## 🛠️ Teknologi yang Digunakan
+
+* **Backend:** CodeIgniter 3
+* **Database:** MySQL
+* **Frontend:** HTML5, CSS3, JavaScript, Bootstrap
+* **Forecasting:** Metode Moving Average
+
+---
+
+## 📂 Struktur Folder Contoh
+
+```
+application/
+│── controllers/
+│── models/
+│── views/
+public/
+│── assets/
+│   ├── css/
+│   ├── js/
+│   ├── img/
+database/
+│── schema.sql
+README.md
+```
+
+---
+
+## 🔧 Cara Instalasi
+
+1. Clone repository:
+
+   ```bash
+   git clone <repo-url>
+   ```
+
+2. Pindah ke folder project:
+
+   ```bash
+   cd pemesanan-makanan
+   ```
+
+3. Import database:
+
+   * Buat database baru
+   * Import file `schema.sql`
+
+4. Konfigurasi environment:
+
+   * Atur `base_url` pada `application/config/config.php`
+   * Atur koneksi MySQL pada `application/config/database.php`
+
+5. Jalankan aplikasi:
+
+   ```
+   http://localhost/pemesanan-makanan
+   ```
+
+---
+
+## 📸 Screenshot (Opsional)
+
+Tambahkan screenshot di bawah ini:
+
+```
+![Landing Page](assets/img/landing.png)
+![Dashboard](assets/img/dashboard.png)
+![Forecasting](assets/img/moving-average.png)
+```
+
+---
+
+## 📞 Kontak
+
+Untuk informasi lebih lanjut, silakan hubungi pemilik aplikasi.
+
+---
+
+## 📄 Lisensi
+
+Open Source / Private – sesuaikan kebutuhan Anda.

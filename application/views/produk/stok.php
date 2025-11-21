@@ -42,7 +42,8 @@
                           0 => (object)array(
                               "id_stok"=>"",
                               "id_produk" =>"",
-                              "jml_stok" => ""
+                              "jml_stok" => "",
+                              "satuan" => ""
                            )
                         ];
                       $act = "Simpan";
@@ -69,6 +70,13 @@
                                   <label for="inputEstimatedBudget">Jumlah Stok</label>
                                   <input name="jml_stok" type="text" id="5" value="<?=$view[0]->jml_stok?>" class="form-control">
                               </div>
+                              <div class="form-group">
+                                <label for="satuan">Satuan</label>
+                                <select name="satuan" id="satuan" class="form-control">
+                                    <option value="Pcs" <?= $view[0]->satuan == 'Pcs' ? 'selected' : '' ?>>Pcs</option>
+                                    <option value="Porsi" <?= $view[0]->satuan == 'Porsi' ? 'selected' : '' ?>>Porsi</option>
+                                </select>
+                            </div>
                           </div>
                       </div>
                       <div class="modal-footer">
@@ -97,6 +105,7 @@
                                           <th style="">No.</th>
                                           <th style="">Nama</th>
                                           <th style="">Jumlah</th>
+                                          <th style="">Satuan</th>
                                           <th class="text-center">Aksi</th>
                                       </tr>
                                   </thead>
@@ -112,6 +121,7 @@
                                                 echo "<th>" . $no++ . "</th>";
                                                 echo "<th>" . strtoupper($value->nama_produk) . "</th>";
                                                 echo "<th>" . strtoupper($value->jml_stok) . "</th>";
+                                                echo "<th>" . strtoupper($value->satuan) . "</th>";
                                                 ?>
                                                 <td class="text-center">
                                                     <button class="btn btn-xs btn-primary" href="" id="<?= $value->id_stok ?>" onclick="action_view('<?= $value->id_stok ?>')"><i class="fa fa-eye"></i></button>
