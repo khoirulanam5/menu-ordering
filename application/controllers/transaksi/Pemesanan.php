@@ -51,7 +51,7 @@ class Pemesanan extends CI_Controller {
     }    
 
     public function generateNoTransaksi() {
-        $unik = "TR" . date('Ym'); // Membuat prefix dengan format TRYYYYMM
+        $unik = "TR" . date('Ym');
         $result = $this->db->query("SELECT MAX(no_transaksi) AS LAST_NO FROM pemesanan WHERE no_transaksi LIKE '".$unik."%'")->row();
 
         if ($result && $result->LAST_NO) {

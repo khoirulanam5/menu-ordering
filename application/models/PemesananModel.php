@@ -31,14 +31,6 @@ class PemesananModel extends CI_Model {
         return $query->row();
     }
     
-    // public function get_pemesanan() {
-    //     $this->db->select('pemesanan.*, produk.nama_produk');
-    //     $this->db->from('pemesanan');
-    //     $this->db->join('produk', 'pemesanan.id_produk = produk.id_produk');
-    //     $query = $this->db->get();
-    //     return $query->result();
-    // }
-    
     public function get_count() {
         $this->db->select('COUNT(DISTINCT pemesanan.no_transaksi) as total');
         $this->db->from('pemesanan');

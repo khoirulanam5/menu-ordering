@@ -26,7 +26,7 @@
 
     .app-title {
       font-weight: bold;
-      font-size: 28px;
+      font-size: 20px;
       text-align: center;
       color: #333;
       margin-top: 10px;
@@ -76,7 +76,7 @@
     <div class="card card-outline">
       <div class="card-body text-center">
       <img src="<?= base_url('/src/img/wm.jpeg'); ?>" alt="Logo" width="150" style="margin-bottom: 10px;">
-        <div class="app-title">WM GARANG ASEM</div>
+        <div class="app-title">WM GARANG ASEM PODO ROSO</div>
         <div class="app-address">Jl. Patimura, Karangwatu, Loram Kulon, Kec. Jati, Kab. Kudus, Jawa Tengah</div>
         <hr>
         <form action="<?= base_url('login/cek'); ?>" method="post">

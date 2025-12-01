@@ -1,5 +1,5 @@
 <link rel="icon" type="image/png" sizes="16x16" href="../src/img/wm.jpeg">
-<title>WM Garang Asem</title>
+<title>WM Garang Asem Podo Roso</title>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 
@@ -16,7 +16,7 @@
             
             <center>
                 <!-- Menampilkan nama pengguna dan level -->
-                <h4>Selamat Datang di Sistem WM Garang Asem.</h4>
+                <h4>Selamat Datang di Sistem WM Garang Asem Podo Roso.</h4>
                 <p>Anda dapat melakukan pekerjaan sesuai dengan jabatan <?= userData()->level ?></p>
                 
                 <!-- Menampilkan gambar -->

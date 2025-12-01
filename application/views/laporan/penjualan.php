@@ -204,6 +204,7 @@
                               <table class="table table-bordered table-striped" id="tables">
                                   <thead>
                                       <tr>
+                                          <th style="">No. </th>
                                           <th style="">No Transaksi </th>
                                           <th style="">Total Bayar</th>
                                           <th style="">Status Pengiriman</th>
@@ -229,6 +230,7 @@
                                               ?>
                                               <tr id="<?= $value->no_transaksi ?>">
                                                   <?php
+                                                      echo "<th>" . $no++ . "</th>";
                                                       echo "<th>" . strtoupper($value->no_transaksi) . "</th>";
                                                       echo "<th>" . strtoupper($total->total_bayar) . "</th>";
                                                       echo "<th>" . strtoupper($pengiriman) . "</th>";
@@ -273,7 +275,7 @@
 <script src="<?= base_url()?>src/dataTables/buttons.colVis.min.js"></script>
 <script type="text/javascript">
   var table = $("#tables").DataTable({
-          order:[[0,'desc']],
+          order:[[0,'asc']],
           responsive: true
       });
       

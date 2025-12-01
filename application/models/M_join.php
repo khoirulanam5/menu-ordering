@@ -8,8 +8,7 @@ class M_join extends CI_Model {
     }
 
     public function pdetail() {
-        $this->db->select('a.id_detail_produk ,a.id_pelanggan ,a.id_produk ,sum(a.jumlah) as jumlah ,a.tanggal ,
-        b.nama_produk ,b.jenis_pro ,b.diskripsi, b.harga_jualpro, b.images ,c.jml_stok');
+        $this->db->select('a.id_detail_produk ,a.id_pelanggan ,a.id_produk ,sum(a.jumlah) as jumlah ,a.tanggal ,b.nama_produk ,b.jenis_pro ,b.diskripsi, b.harga_jualpro, b.images ,c.jml_stok');
         $this->db->from("detail_beli_produk a");
         $this->db->join("produk b","a.id_produk = b.id_produk","left");
         return $this->db->join("tb_stok c", "b.id_produk = c.id_produk");

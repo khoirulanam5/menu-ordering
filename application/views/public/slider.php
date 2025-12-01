@@ -1,6 +1,6 @@
 <div class="col-lg-6 col-xl-3">
     <div style="padding:50px" class="text-center">
-        <h2>WM Garang Asem</h2>
+        <h2>WM Garang Asem Podo Roso</h2>
         <p style="font-size:12px">WM Garang Asem Podo Roso menyediakan aneka menu khas tradisional Jawa, khususnya garang asem yang diolah dengan resep turun-temurun dan cita rasa autentik. Kami melayani penjualan untuk makan di tempat, bawa pulang, maupun dalam bentuk frozen food. Setiap hidangan kami dibuat dengan bahan berkualitas dan diolah secara higienis, cocok untuk dinikmati setiap hari maupun acara khusus.</p>
         <p style="font-size:13px">Alamat : Jl. Patimura, Karangwatu, Loram Kulon, Kec. Jati, Kab. Kudus, Jawa Tengah</p>
     </div>

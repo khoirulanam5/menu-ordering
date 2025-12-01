@@ -83,7 +83,7 @@
                                           <th style="">No Resi </th>
                                           <th style="">Total Bayar</th>
                                           <th style="">Status Pengiriman</th>
-                                          <th style="">Tgl Jual</th>
+                                          <th style="">Tanggal Jual</th>
                                           <th style="">Nama Penerima</th>
                                           <th class="text-center">Aksi</th>
                                       </tr>
@@ -111,7 +111,6 @@
                                                         echo "<th>" . strtoupper($value->nama_penerima) . "</th>";
                                                     ?>
                                                     <td class="text-center">
-                                                        <!-- <button class="btn btn-xs btn-primary" id="<?= $value->no_transaksi ?>" onclick="action_view('<?= $value->no_transaksi ?>')"><i class="fa fa-eye"></i></button> -->
                                                         <a href="<?php echo site_url('transaksi/penjualan/cetak_nota/' . $value->no_transaksi); ?>" class="btn btn-xs btn-primary" target="_blank"><i class="fa fa-print"></i></a>
                                                         <button class="btn btn-xs btn-primary" onclick="action_delete('<?= $value->no_transaksi ?>')"><i class="fa fa-trash-alt"></i></button>
                                                     </td>

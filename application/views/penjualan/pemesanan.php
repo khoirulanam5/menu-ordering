@@ -94,9 +94,9 @@
                                         <th style="width: 7%;">No.</th>
                                         <th style="width: 10%;">No Transaksi</th>
                                         <th style="width: 20%;">Nama</th>
-                                        <th style="width: 15%;">Harga</th>
+                                        <th style="width: 10%;">Harga</th>
                                         <th style="width: 10%;">Jumlah</th>
-                                        <th style="width: 10%;">Total Harga</th>
+                                        <th style="width: 15%;">Total Harga</th>
                                         <th style="width: 20%;">Tanggal</th>
                                         <th style="width: 13%;">Nota</th>
                                     </tr>

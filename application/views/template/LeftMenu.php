@@ -5,7 +5,7 @@
 
         <!-- Nama Usaha -->
         <div class="text-center mt-2">
-            <span style="font-weight: bold; font-size: 16px; color: #322f20;">WM GARANG ASEM</span>
+            <span style="font-weight: bold; font-size: 16px; color: #322f20;">WM GARANG ASEM PODO ROSO</span>
         </div>
 
     </a>

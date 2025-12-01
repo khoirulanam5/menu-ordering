@@ -113,7 +113,6 @@
                                     <?php
                                     $no = 1;
                                     if (!empty($datas)) {
-                                        $no = 1;
                                         foreach ($datas as $key => $value) {
                                         ?>
                                             <tr id="<?= $value->id_stok ?>">
@@ -129,7 +128,6 @@
                                                 </td>
                                             </tr>
                                         <?php
-                                        $no++;
                                       }
                                     }
                                     ?>
@@ -163,7 +161,7 @@
 <script src="<?= base_url()?>src/dataTables/buttons.print.min.js"></script>
 <script src="<?= base_url()?>src/dataTables/buttons.colVis.min.js"></script>
 <script type="text/javascript">
-  var table = $('#tables').DataTable({order:[[0,'desc']]});
+  var table = $('#tables').DataTable({order:[[0,'asc']]});
 
   function action_add(id) {
       location.href = "?act=add";
